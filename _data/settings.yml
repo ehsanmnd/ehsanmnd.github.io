@@ -19,8 +19,9 @@ menu:
 author:
   name: Ehsan Maminejad
   image: 01.jpg
-  say-hello: Hello, I'm <strong>Ehsan Maminejad</strong>
-  bio: Data Scientist & Machine Learning Enthusiast
+  say-hello: Hello, I'm <strong>Ehsan Maminejad</strong> and welcome to my site.
+  bio: I’m a data scientist and engineer who loves solving real-world problems with machine learning, AI, and data.
+    Skilled in building scalable solutions and always exploring new ways to optimize and innovate.
 
 # Contact links
 github: https://github.com/ehsanmaminejad
