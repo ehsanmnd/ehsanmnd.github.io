@@ -1,0 +1,49 @@
+#-------------------------------
+# Site Settings
+logo: logo.svg
+
+#-------------------------------
+# Navigation Menu
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+
+#-------------------------------
+# Author Settings
+author:
+  name: Ehsan Maminejad
+  image: 01.jpg
+  say-hello: Hello, I'm <strong>Ehsan Maminejad</strong>
+  bio: Data Scientist & Machine Learning Enthusiast
+
+  # Author social links
+
+github: https://github.com/ehsanmaminejad
+linkedin: https://www.linkedin.com/in/ehsanmaminejad
+    # Add more social links as needed
+
+#-------------------------------
+# Blog Settings
+blog:
+  title: Blog
+  description: My latest thoughts and stories
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: ehsan.maminejad@gmail.com
+  description: Get in touch with me
+
+#-------------------------------
+# Analytics Settings
+google_analytics: # Add your identifier. For example UA-99631805-1
+
+#-------------------------------
+# Build Settings
+disqus-identifier: # Add your shortname for Disqus Comment
