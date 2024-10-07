@@ -12,7 +12,8 @@
   {% include header.html %}
 
   <!-- begin content -->
-  <main class="content" aria-label="Content">
+  {% assign baseurl_with_slash = site.baseurl | append: '/' %}
+  <main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash %}home{% endif %}" aria-label="Content">
     {{ content }}
   </main>
   <!-- end content -->

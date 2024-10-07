@@ -1,3 +1,11 @@
+.content {
+  background-color: $page-background;
+
+  &.home {
+    background-color: $background-color;
+  }
+}
+
 .page-title-box {
   padding: 80px 0;
   border-top: 1px solid $light-gray;
