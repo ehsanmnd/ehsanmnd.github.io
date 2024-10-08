@@ -4,6 +4,7 @@ url: "https://ehsanmaminejad.github.io"
 permalink: /:year/:month/:day/:title/
 
 
+
 # Build settings
 markdown: kramdown
 #theme: minima  # Note: We'll remove this when implementing custom themes
