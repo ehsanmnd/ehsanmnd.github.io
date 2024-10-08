@@ -62,7 +62,12 @@
 // 1.6 Zoom
 @import '1-tools/zoom';
 
+// 1.7 Icons
 @import '1-tools/ionicons';
+
+// 1.8 Iransans
+@import '1-tools/fontiran';
+
 
 
 /* >>>>>>>>>>>>>> :: 2-Base Styles <<<<<<<<<<<<<<< */
@@ -97,8 +102,14 @@
 // 3.8 Instagram
 @import '3-modules/instagram';
 
-// 3.9 Instagram
+// 3.9 Footer
 @import '3-modules/footer';
+
+// 3.10 Buttons
+@import '3-modules/buttons';
+
+// 3.11 Iransans
+@import "3-modules/rtl";
 
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
