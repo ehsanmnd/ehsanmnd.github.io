@@ -3,8 +3,12 @@ layout: page
 title: About
 description: About page of Ehsan Maminejad - Blog 
 image: about.jpg
-permalink: /about-en/
+permalink: en/about/
 ---
+
+
+For reading about me in Farsi, you can see [here](/fa/about).
+
 
 Hi dear vistors! My name is Ehsan Maminejad, and welcome to my website! 
 
