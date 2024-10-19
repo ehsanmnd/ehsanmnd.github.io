@@ -24,3 +24,13 @@
   width: 1px;
   word-wrap: normal !important;
 }
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}

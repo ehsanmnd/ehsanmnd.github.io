@@ -4,6 +4,7 @@ url: "https://ehsanmaminejad.github.io"
 permalink: /:year/:month/:day/:title/
 
 
+
 # Build settings
 markdown: kramdown
 #theme: minima  # Note: We'll remove this when implementing custom themes
@@ -21,13 +22,6 @@ languages: ["en", "fa"]
 default_lang: "en"
 exclude_from_localizations: ["assets", "images", "css", "js", "fonts"]
 
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-  posts:
-    output: true
 
 sass:
   sass_dir: _sass
@@ -55,6 +49,8 @@ defaults:
       lang: "en"
       direction: "ltr"
 
+
+
 # Markdown settings
 kramdown:
   input: GFM
@@ -66,6 +62,7 @@ watch: true
 safe: true
 
 # Exclude from processing
+# Exclude from processing
 exclude:
   - vendor
   - Gemfile
@@ -74,3 +71,5 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+  - .jekyll-cache
+  - .sass-cache

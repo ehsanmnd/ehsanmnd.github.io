@@ -1,3 +1,11 @@
+.content {
+  background-color: $page-background;
+
+  &.home {
+    background-color: $background-color;
+  }
+}
+
 .page-title-box {
   padding: 80px 0;
   border-top: 1px solid $light-gray;
@@ -6,6 +14,7 @@
     font-size: 57px;
     line-height: 70px;
     margin: 0;
+    text-indent: 100px;
   }
 
   @media only screen and (max-width: $mobile) {
@@ -25,6 +34,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: $light-gray;
+    max-width: 950px;
+    margin: 0 auto; /* مرکز کردن */
     &:after {
       content: "";
       display: table;
