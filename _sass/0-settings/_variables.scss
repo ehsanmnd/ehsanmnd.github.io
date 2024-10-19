@@ -23,6 +23,10 @@ $white: #ffffff;
 $black: #000000;
 $milky-white: #fffff8;
 
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
 // Background Colors
 $background-color: $white;
 $page-background: $milky-white;
