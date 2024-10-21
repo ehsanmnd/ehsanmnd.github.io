@@ -4,7 +4,7 @@
 
   .post-title {
     margin-bottom: 10px;
-    width: 500px;
+    width: auto;
     max-width: 100%;
     font-size: 57px;
     line-height: 70px;
@@ -232,3 +232,15 @@
     margin-bottom: 40px;
   }
 }
+
+.firstcharacter {
+  color: #008d81;
+  float: left;
+  font-family: Georgia;
+  font-size: 70px;
+  line-height: 40px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 1px;
+}
+

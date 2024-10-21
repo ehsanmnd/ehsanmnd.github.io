@@ -1,46 +1,105 @@
 ---
 layout: default
 ---
-{%- include reading_time.html content=page.content -%}
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="container">
+  {% include reading_time.html content=page.content %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %} &verbar; 
-      {{ reading_time }} ({{ total_words }})
-      &nbsp; {% include mini_social.html %}
-    </p>
-  </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+        {% if page.author %}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% endif %}
+        | {{ reading_time }} ({{ total_words }} words)
+        {% include mini_social.html %}
+      </p>
+    </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {% if page.image %}
+      <div class="post-image" style="background-image: url({{ site.baseurl }}/assets/images/{{ page.image }})"></div>
+    {% endif %}
+
+  </article>
+</div>
+
+
+  <div class="container">
+  <div class="row">
+    <!-- begin post -->
+    <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
+
+      <div class="post__content">
+        {{ content }}
+      </div>
+
+      <div class="post__share">
+        <span class="share__title">Share this article:</span>
+        <ul class="share__list list-reset">
+          <li class="share__item">
+            <a class="share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>
+          </li>
+
+          <li class="share__item">
+            <a class="share__twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>
+          </li>
+
+          <li class="share__item">
+            <a class="share__linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title | uri_escape }}&summary={{ page.description | uri_escape }}&source={{ site.title | uri_escape }}"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow"><i class="ion ion-logo-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <!-- end post -->
+    </div>
   </div>
 
+  <div class="container">
+  <div class="post__navigation">
+    {% if page.previous.url %}
+    <div class="prev">
+      <a class="post__nav__image" href="{{ site.baseurl }}{{page.previous.url}}" style="background-image: url({{site.baseurl}}/images/{{page.previous.image}})"></a>
+      <h2 class="post__nav__title">
+        <i class="ion ion-md-arrow-back"></i>
+        <a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a>
+      </h2>
+      <p class="prev__excerpt">
+        {% if page.previous.description %}
+          {{ page.previous.description }}
+        {% else %}
+          {{ page.previous.content | strip_html | truncate: 110 }}
+        {% endif %}
+      </p>
+    </div>
+    {% endif %}
 
-  <!--
-{% if jekyll.environment == "production" %}
-<div style="display:flex;justify-content:center;">
-<iframe src="https://ljvmiranda.substack.com/embed" width="480" height="100" style="border:0px solid #EEE; background:fffff8;" frameborder="0" scrolling="no"></iframe>
-</div>
-{% endif %}
--->
+    {% if page.next.url %}
+    <div class="next">
+      <a class="post__nav__image" href="{{ site.baseurl }}{{page.next.url}}" style="background-image: url({{site.baseurl}}/images/{{page.next.image}})">
+      </a>
+      <h2 class="post__nav__title">
+        <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a>
+        <i class="ion ion-md-arrow-forward"></i>
+      </h2>
+      <p class="next__excerpt">
+        {% if page.next.description %}
+          {{ page.next.description }}
+        {% else %}
+          {{ page.next.content | strip_html | truncate: 110 }}
+        {% endif %}
+      </p>
+    </div>
+    {% endif %}
+  </div>
 
-{% if page.comments != false and jekyll.environment == "production" %}
-  <script src="https://utteranc.es/client.js"
-        repo="ehsanmaminejad/comments.ehsanmaminejad.github.io"
-        issue-term="title"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-  </script>
-{% endif %}
-
-</article>
+  {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+  </div>
