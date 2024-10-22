@@ -1,56 +1,73 @@
 ---
 layout: post
-title: "Hello World: Diving into the Data Ocean Together"
+title: "Hello World!"
 date: 2024-10-19
 comments: true
 author: "Ehsan Maminejad"
 summary: "My first post on my website, and why I am here."
-tags: [Hello World, Data Science, Python, Research, Machine Learning]
+tags: [Notebook]
 lang: eng
 image: owl-2.png
 ---
-<span class="firstcharacter">H</span>ey there, data enthusiasts and curious minds! I'm Ehsan Maminejad, and welcome to my little corner of the internet where we'll be exploring the vast, exciting world of data science together. 
+
+<span class="firstcharacter">H</span>ello, data enthusiasts and curious minds! I'm Ehsan Maminejad,
+and welcome to my little corner of the internet.
+Here, we'll be exploring the vast and exciting world of data science,
+machine learning, and related topics. But it won't just be about tech; it will also be about life!"
+
+
 
 ## Why "Hello World!"?
 
-As any coder knows, "Hello World!" is the traditional first step in learning a new programming language. Consider this blog post my "Hello World!" to you—the start of what I hope will be an exciting journey of learning, sharing, and growing together in the field of data science.
+As any coder knows, "Hello World!" is the traditional first step in learning a new programming language.
+Consider this blog post my "Hello World!" to you—the start of what I hope will be an exciting journey of learning,
+sharing, and growing together in data science and what is related to life.
+
+
+## Why "Owl"?
+In Greek mythology, Athena, the goddess of wisdom, chose the owl as her sacred animal,
+associating it with her keen intelligence and strategic prowess.
+The owl became a symbol of wisdom, representing the ability to see beyond the surface and discern truth in the shadows[^1].
+By this definition, in my opinion, the owl would be a fitting symbol for a data scientist, someone who works with data to gain wisdom or solve a problem!
+
 
 ## Who Am I?
 
-I'm a data scientist with a passion for turning raw data into actionable insights. With over three years of experience diving deep into predictive modeling, MLOps, and everything in between, I've had the privilege of working on some pretty cool projects. From building customer data platforms for B2B businesses to developing social commerce search engines, I've seen firsthand how data can transform businesses and industries.
+I'm a data scientist and ML engineer with a passion for designing and implementing AI/ML systems.
+I've had the privilege of working on some pretty cool projects.
+From building customer data platforms for B2B businesses to developing social commerce search engines,
+I've seen firsthand how data can transform businesses and industries.
 
-But enough about my resume (you can check that out on my About page if you're really curious). What I'm really excited about is sharing what I've learned along the way and learning from you too!
+Also, I am interested in mountain climbing, cooking, reading books and music.
+
+But enough about my resume (you can check that out on my [About page(en)](/en/about) or [About page(fa)](/fa/about)if you're really curious). What I'm really excited about is sharing what I've learned along the way and learning from you too!
 
 ## What's This Blog All About?
 
 Think of this blog as a melting pot of data science goodness. Here's what you can expect:
 
-1. **Deep Dives into Data**: We'll explore everything from customer segmentation techniques to the intricacies of natural language processing.
-2. **Real-World Case Studies**: I'll share stories from the trenches—what worked, what didn't, and what I learned.
-3. **Tutorials and How-Tos**: Whether you're a seasoned pro or just starting out, there'll be something here for you to sink your teeth into.
-4. **Industry Insights**: We'll keep our finger on the pulse of the latest trends and technologies shaping the world of data science.
-5. **Career Tips**: Thinking of making a switch to data science? I've been there, and I'm happy to share my two cents.
+My Blog will consist of four main parts:
+- Life: A space for personal experiences, reflections, and day-to-day thoughts.
+- Projects: Detailed documentation of personal and professional projects.
+- Research: Deep dives into specific topics and academic interests.
+- Notebook: Quick notes, ideas, and learning materials that I hope helps you as much as it has helped me. 
 
-And here's the cool part—all of this will be available in both English and Farsi. Why? Because I believe knowledge should transcend language barriers. Plus, it's a great way to practice my writing skills in both languages!
+I would like to mention that I am attempting to post in both English and Farsi.
 
-## Who's This For?
 
-Whether you're a fellow data scientist, a student just starting your journey, a business professional looking to leverage data in your industry, or someone considering a career change into this exciting field—there's something here for you. My goal is to make data science accessible, practical, and dare I say it, fun!
+## Let's Kick Off This Data Adventure!
 
-## Let's Get This Data Party Started!
+I'm excited to start this adventure with you. Here's how you can get involved:
 
-I'm thrilled to embark on this journey with you. Here's how you can join in:
+- Questions? Feel free to ask anything in the comments. Remember, in data science, there are no dumb questions!
 
-- Got questions? Drop them in the comments. No such thing as a dumb question in data science!
-- Have ideas for topics you'd like me to cover? I'm all ears!
-- Want to collaborate on a project or post? Let's talk!
+- Suggestions for topics you want to see discussed? I'm open to all ideas!
 
-In the coming weeks, we'll be diving into some exciting topics. First up: a deep dive into customer segmentation techniques that can transform your business strategy. Stay tuned!
-
-Remember, in the world of data science, we're all perpetual students. So let's learn, grow, and maybe even change the world—one dataset at a time.
-
-Catch you in the next post!
+- Interested in collaborating on a project or contributing to a post? Reach out, and let's discuss!
 
 Ehsan
 
-P.S. If you're as excited about this journey as I am, don't forget to subscribe to the blog and follow me on [insert your preferred social media platforms]. Let's keep the conversation going!
+
+### References
+
+[^1]: [Wisdom Embodied: The Owl of Athena in Myth and Symbolism](https://www.stakora.com/en-eu/blogs/latest-blogs/wisdom-embodied-the-owl-of-athena-in-myth-and-symbolism#:~:text=In%20Greek%20mythology%2C%20Athena%2C%20the,discern%20truth%20in%20the%20shadows.)
