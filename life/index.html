@@ -1,0 +1,33 @@
+---
+layout: default
+title: Life
+permalink: /life/
+category: life
+description: A space for personal experiences, reflections, and day-to-day thoughts.
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12">
+            <h2 class="category-title">{{ page.title }}</h2>
+            <h4 class="page-description">{{ page.description }}</h4>
+            <hr class="page-divider">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% assign filtered_posts = site.posts | where: "categories", page.category %}
+
+        {% if filtered_posts.size > 0 %}
+            {% for post in filtered_posts %}
+                {% include article-content.html %}
+            {% endfor %}
+        {% else %}
+            <p>No posts found in this category.</p>
+        {% endif %}
+    </div>
+</div>
+
+{% include pagination.html %}

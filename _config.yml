@@ -1,7 +1,7 @@
 # Link settings
 baseurl: ""
 url: "https://ehsanmaminejad.github.io"
-permalink: /:year/:month/:day/:title/
+permalink: pretty
 
 
 

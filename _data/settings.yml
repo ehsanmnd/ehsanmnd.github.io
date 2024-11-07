@@ -3,18 +3,6 @@
 logo: logo.svg
 
 #-------------------------------
-# Navigation Menu
-menu:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Blog
-    url: /blog/
-  - title: Contact
-    url: /contact/
-
-#-------------------------------
 # Author Settings
 author:
   name: Ehsan Maminejad

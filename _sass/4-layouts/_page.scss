@@ -15,6 +15,7 @@
     line-height: 70px;
     margin: 0;
     text-indent: 100px;
+    color: #008d81;
   }
 
   @media only screen and (max-width: $mobile) {
@@ -72,4 +73,24 @@
       }
     }
   }
+}
+
+.page-divider {
+    border: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+.page-description {
+    color: #555; /* رنگ متن توضیحات */
+    font-size: 1.2em; /* اندازه فونت */
+    text-align: center;
+    margin-bottom: 30px; /* فاصله از محتوای بعدی */
+}
+
+.category-title {
+    color: #008d81; /* کد رنگ دلخواه خودتون رو وارد کنید */
+    font-size: 2em; /* اندازه عنوان */
+    text-align: center; /* تنظیم متن به وسط */
+    margin-bottom: 20px;
 }
