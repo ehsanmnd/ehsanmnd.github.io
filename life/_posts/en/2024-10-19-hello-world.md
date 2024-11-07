@@ -5,15 +5,15 @@ date: 2024-10-19
 comments: true
 author: "Ehsan Maminejad"
 summary: "My first post on my website, and why I am here."
-tags: [Notebook]
+tags: [life]
+category: life
 lang: eng
 image: owl-2.png
 ---
 
-<span class="firstcharacter">H</span>ello, data enthusiasts and curious minds! I'm Ehsan Maminejad,
-and welcome to my little corner of the internet.
-Here, we'll be exploring the vast and exciting world of data science,
-machine learning, and related topics. But it won't just be about tech; it will also be about life!"
+<span class="firstcharacter">H</span>ey there, data enthusiasts and curious minds! I'm Ehsan Maminejad.
+Welcome to my little corner of the internet, where we'll explore the vast, exciting world of data science, machine learning, and related topics. 
+But it will not be just for tech, it will also be about life!
 
 
 
