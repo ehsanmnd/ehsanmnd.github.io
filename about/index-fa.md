@@ -5,6 +5,7 @@ description: About page of Ehsan Maminejad - Blog
 image: about.jpg
 permalink: fa/about/
 lang: fa
+comments: true
 ---
 
 #### سلام!  

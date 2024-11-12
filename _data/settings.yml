@@ -34,4 +34,4 @@ google_analytics: # Add your identifier. For example UA-99631805-1
 
 #-------------------------------
 # Build Settings
-disqus-identifier: # Add your shortname for Disqus Comment
+disqus-identifier: Echius # Add your shortname for Disqus Comment
