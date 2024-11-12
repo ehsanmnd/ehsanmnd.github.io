@@ -1,0 +1,96 @@
+.content {
+  background-color: $page-background;
+
+  &.home {
+    background-color: $background-color;
+  }
+}
+
+.page-title-box {
+  padding: 80px 0;
+  border-top: 1px solid $light-gray;
+
+  .page-title {
+    font-size: 57px;
+    line-height: 70px;
+    margin: 0;
+    text-indent: 100px;
+    color: #008d81;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 40px 0;
+
+    .page-title {
+      font-size: 47px;
+      line-height: 53px;
+    }
+  }
+}
+
+.page__head {
+  
+  .page-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $light-gray;
+    max-width: 950px;
+    margin: 0 auto; /* مرکز کردن */
+    &:after {
+      content: "";
+      display: table;
+      width: 100%;
+      min-height: 300px;
+      padding-top: 50%;
+    }
+  }
+}
+
+.page {
+  margin: 80px auto;
+
+  img {
+    margin: 30px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin: 40px auto;
+  }
+}
+
+.page-box {
+  text-align: center;
+
+  .back-arrow {
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      color: $dark;
+      font-weight: 700;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+.page-divider {
+    border: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+.page-description {
+    color: #555; /* رنگ متن توضیحات */
+    font-size: 1.2em; /* اندازه فونت */
+    text-align: center;
+    margin-bottom: 30px; /* فاصله از محتوای بعدی */
+}
+
+.category-title {
+    color: #008d81; /* کد رنگ دلخواه خودتون رو وارد کنید */
+    font-size: 2em; /* اندازه عنوان */
+    text-align: center; /* تنظیم متن به وسط */
+    margin-bottom: 20px;
+}
