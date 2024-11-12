@@ -4,6 +4,7 @@ title: About
 description: About page of Ehsan Maminejad - Blog 
 image: about.jpg
 permalink: en/about/
+comments: true
 ---
 
 
