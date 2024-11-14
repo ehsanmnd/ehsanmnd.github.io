@@ -5,26 +5,36 @@
 
 <body>
 
-  {% if site.data.settings.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
+{% if site.data.settings.google-analytics %}
+{% include google-analytics.html %}
+{% endif %}
 
-  {% include header.html %}
 
-  <!-- begin content -->
-  {% assign baseurl_with_slash = site.baseurl | append: '/' %}
-  <main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash %}home{% endif %}" aria-label="Content">
+{% include header.html %}
+
+<!-- begin content -->
+{% assign baseurl_with_slash = site.baseurl | append: '/' %}
+<main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash %}home{% endif %}"
+      aria-label="Content">
     {{ content }}
-  </main>
-  <!-- end content -->
+</main>
+<!-- end content -->
 
-  <div class="top ion ion-ios-arrow-up" title="Top"></div>
+<div class="top ion ion-ios-arrow-up" title="Top"></div>
 
-  {% include search.html %}
+{% include search.html %}
 
-  {% include footer.html %}
+<div class="container">
+    {% if page.comments %}
+    {% if site.data.settings.disqus-identifier %}
+    {% include disqus-comments.html %}
+    {% endif %}
+    {% endif %}
+</div>
 
-  {% include javascripts.html %}
+{% include footer.html %}
+
+{% include javascripts.html %}
 </body>
 
 </html>
