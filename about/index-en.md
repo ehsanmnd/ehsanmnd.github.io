@@ -32,4 +32,4 @@ so grab yourself a coffee and feel free to look around!
 **Ehsan Maminejad**  
 Karaj, Iran   
 Email: Ehsan.maminejad [at] gmail [dot] com  
-My CV: 【[📄 Curriculum Vitae (PDF)](https://echi.s3.ir-thr-at1.arvanstorage.ir/My-CV-R16.pdf?versionId=)】
+My CV: 【[📄 Curriculum Vitae (PDF)](https://echi.s3.ir-thr-at1.arvanstorage.ir/documents%2FData%20Scientist.pdf?versionId=)】
