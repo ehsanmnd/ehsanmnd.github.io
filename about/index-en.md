@@ -3,7 +3,7 @@ layout: page
 title: About
 description: About page of Ehsan Maminejad - Blog 
 image: about.jpg
-permalink: en/about/
+permalink: about/en
 comments: true
 ---
 
@@ -11,7 +11,7 @@ comments: true
 Hi dear vistors! My name is Ehsan Maminejad, and welcome to my website! 
 
 
-> For a comprehensive description of me in Farsi, you can read [here](/fa/about).
+> For a comprehensive description of me in Farsi, you can read [here](/about/fa).
 
 
 I am trying to be an observer and a problem solver in this world full of challenges and opportunities.  

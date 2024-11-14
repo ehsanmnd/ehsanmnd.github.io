@@ -3,7 +3,7 @@ layout: page
 title: درباره من
 description: About page of Ehsan Maminejad - Blog 
 image: about.jpg
-permalink: fa/about/
+permalink: about/fa
 lang: fa
 comments: true
 ---
