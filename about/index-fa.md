@@ -64,6 +64,6 @@ comments: true
 
 
 
-خب فکر میکنم **فعلاً** تا همینجا کافی باشه. جزییات کاری و تحصیلیم رو در [رزومه‌ام](https://echi.s3.ir-thr-at1.arvanstorage.ir/documents%2FData%20Scientist.pdf?versionId=
+خب فکر میکنم **فعلاً** تا همینجا کافی باشه. جزییات کاری و تحصیلیم رو در [رزومه‌ام](https://echi.s3.ir-thr-at1.arvanstorage.ir/documents%2FMy-CV-R25.pdf?versionId=
 ) می‌تونید بخونید و در مورد پروژه‌هایی که انجام دادم هم در اینجا نوشتم.
 
