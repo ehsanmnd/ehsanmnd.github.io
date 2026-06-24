@@ -8,41 +8,38 @@
                     <a class="logo__link" href="{{site.baseurl}}/fa/">
                         {%if site.data.settings.logo %}
                         <img class="logo__image" src="{{ site.baseurl }}/assets/images/{{ site.data.settings.logo }}"
-                             alt="{{ site.data.settings.title }}">
+                             alt="{{ site.data.settings.author.name }}">
                         {% else %}
-                        {{ site.data.settings.title }}
+                        {{ site.data.settings.author.name }}
                         {% endif %}
                     </a>
                 </div>
 
                 <nav class="main-nav">
-
                     <div class="main-nav__box">
                         <div class="nav-icon__close">
                             <i class="ion ion-ios-close-circle-outline"></i>
                         </div>
 
-                        <div class="nav__title">منو</div>
+                        <div class="nav__title">{{ site.data.fa.nav.menu }}</div>
 
                         <ul class="nav__list list-reset">
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/fa/" class="nav__link">خانه</a>
+                                <a href="{{ site.baseurl }}/fa/" class="nav__link">{{ site.data.fa.nav.home }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/about/fa" class="nav__link">درباره</a>
+                                <a href="{{ site.baseurl }}/about/fa" class="nav__link">{{ site.data.fa.nav.about }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/fa/life/" class="nav__link">زندگی</a>
+                                <a href="{{ site.baseurl }}/fa/life/" class="nav__link">{{ site.data.fa.nav.life }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/fa/notebook/" class="nav__link">دفترچه</a>
+                                <a href="{{ site.baseurl }}/fa/notebook/" class="nav__link">{{ site.data.fa.nav.notebook }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/fa/research/" class="nav__link">پژوهش</a>
+                                <a href="{{ site.baseurl }}/fa/research/" class="nav__link">{{ site.data.fa.nav.research }}</a>
                             </li>
                         </ul>
-
-
                     </div>
                 </nav>
 
@@ -59,4 +56,4 @@
             <!-- end header -->
         </div>
     </div>
-</div> 
+</div>
