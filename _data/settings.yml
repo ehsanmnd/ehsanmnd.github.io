@@ -8,8 +8,7 @@ author:
   name: Ehsan Maminejad
   image: 01.jpg
   say-hello: Hello, I'm <strong>Ehsan Maminejad</strong> and welcome to my site.
-  bio: Data scientist by day, problem solver by nature.
-  I'm an engineer and scientist who loves solving real-world problems with AI and data—building systems that actually work when real people use them, not just in notebooks.
+  bio: Data scientist by day, problem solver by nature. I'm an engineer and scientist who loves solving real-world problems with AI and data—building systems that actually work when real people use them, not just in notebooks.
 
 # Contact links
 github: https://github.com/ehsanmnd

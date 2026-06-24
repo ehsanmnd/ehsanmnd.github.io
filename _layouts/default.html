@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.direction | default: 'ltr' }}">
 
 {% include head.html %}
 
@@ -9,12 +9,15 @@
 {% include google-analytics.html %}
 {% endif %}
 
-
+{% if page.lang == "fa" %}
+{% include header-fa.html %}
+{% else %}
 {% include header.html %}
+{% endif %}
 
 <!-- begin content -->
 {% assign baseurl_with_slash = site.baseurl | append: '/' %}
-<main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash %}home{% endif %}"
+<main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash or page.url == '/fa/' %}home{% endif %}"
       aria-label="Content">
     {{ content }}
 </main>

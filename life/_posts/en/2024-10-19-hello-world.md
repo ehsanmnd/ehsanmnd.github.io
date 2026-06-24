@@ -7,7 +7,7 @@ author: "Ehsan Maminejad"
 summary: "My first post on my website, and why I am here."
 tags: [life]
 category: life
-lang: eng
+lang: en
 image: owl-2.png
 ---
 

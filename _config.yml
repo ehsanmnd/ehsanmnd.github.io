@@ -38,13 +38,13 @@ defaults:
       author: "Ehsan Maminejad"
       comments: true
   - scope:
-      path: "_posts/fa"
+      path: "life/_posts/fa"
       type: "posts"
     values:
       lang: "fa"
       direction: "rtl"
   - scope:
-      path: "_posts/en"
+      path: "life/_posts/en"
       type: "posts"
     values:
       lang: "en"
