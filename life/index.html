@@ -18,7 +18,7 @@ description: A space for personal experiences, reflections, and day-to-day thoug
 
 <div class="container">
     <div class="row">
-        {% assign filtered_posts = site.posts | where: "categories", page.category %}
+        {% assign filtered_posts = site.posts | where: "categories", page.category | where: "lang", "en" %}
 
         {% if filtered_posts.size > 0 %}
             {% for post in filtered_posts %}

@@ -1,0 +1,5 @@
+{% if page.lang == "fa" %}
+  <a href="{{ site.baseurl }}{{ page.url | replace_first: '/fa', '' }}" class="lang-switch" title="Switch to English">EN</a>
+{% else %}
+  <a href="{{ site.baseurl }}/fa{{ page.url }}" class="lang-switch" title="تغییر به فارسی">فا</a>
+{% endif %} 
