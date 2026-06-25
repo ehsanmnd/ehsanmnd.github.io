@@ -4,6 +4,7 @@ title: About
 description: Ehsan Maminejad - Product Manager and Builder in Digital Products and AI
 image: about.jpg
 lang: en
+direction: ltr
 permalink: /en/about/
 comments: true
 ---

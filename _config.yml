@@ -36,6 +36,11 @@ defaults:
       lang: "fa"
       direction: "rtl"
   - scope:
+      path: "en"
+    values:
+      lang: "en"
+      direction: "ltr"
+  - scope:
       path: "assets/images"
       type: "posts"
     values:
