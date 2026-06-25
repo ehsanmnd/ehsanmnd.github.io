@@ -4,7 +4,14 @@
 	font-weight: 400;
 	direction: rtl;
 }
-h1, h2, h3, h4, h5, h6,input, textarea {
+.rtl-content h1,
+.rtl-content h2,
+.rtl-content h3,
+.rtl-content h4,
+.rtl-content h5,
+.rtl-content h6,
+.rtl-content input,
+.rtl-content textarea {
 	font-family: IRANSans !important;
 }
 h1 {
