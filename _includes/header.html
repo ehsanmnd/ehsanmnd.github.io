@@ -1,3 +1,23 @@
+{% comment %}
+  Single data-driven header. Selects locale data and URL prefix based on page.lang.
+  Farsi (fa) is the default at root; English (en) lives under /en/.
+{% endcomment %}
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+  {% assign home_url = site.baseurl | append: '/en/' %}
+  {% assign about_url = site.baseurl | append: '/en/about/' %}
+  {% assign life_url = site.baseurl | append: '/en/life/' %}
+  {% assign notebook_url = site.baseurl | append: '/en/notebook/' %}
+  {% assign research_url = site.baseurl | append: '/en/research/' %}
+{% else %}
+  {% assign t = site.data.fa %}
+  {% assign home_url = site.baseurl | append: '/' %}
+  {% assign about_url = site.baseurl | append: '/about/' %}
+  {% assign life_url = site.baseurl | append: '/life/' %}
+  {% assign notebook_url = site.baseurl | append: '/notebook/' %}
+  {% assign research_url = site.baseurl | append: '/research/' %}
+{% endif %}
+
 <div class="container">
     <div class="row">
         <div class="col col-12">
@@ -5,12 +25,12 @@
             <header class="header">
 
                 <div class="logo">
-                    <a class="logo__link" href="{{site.baseurl}}/">
+                    <a class="logo__link" href="{{ home_url }}">
                         {%if site.data.settings.logo %}
                         <img class="logo__image" src="{{ site.baseurl }}/assets/images/{{ site.data.settings.logo }}"
-                             alt="{{ site.data.settings.title }}">
+                             alt="{{ site.data.settings.author.name }}">
                         {% else %}
-                        {{ site.data.settings.title }}
+                        {{ site.data.settings.author.name }}
                         {% endif %}
                     </a>
                 </div>
@@ -22,23 +42,23 @@
                             <i class="ion ion-ios-close-circle-outline"></i>
                         </div>
 
-                        <div class="nav__title">Menu</div>
+                        <div class="nav__title">{{ t.nav.menu }}</div>
 
                         <ul class="nav__list list-reset">
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/" class="nav__link">Home</a>
+                                <a href="{{ home_url }}" class="nav__link">{{ t.nav.home }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/about/en" class="nav__link">About</a>
+                                <a href="{{ about_url }}" class="nav__link">{{ t.nav.about }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/life/" class="nav__link">Life</a>
+                                <a href="{{ life_url }}" class="nav__link">{{ t.nav.life }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/notebook/" class="nav__link">Notebook</a>
+                                <a href="{{ notebook_url }}" class="nav__link">{{ t.nav.notebook }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ site.baseurl }}/research/" class="nav__link">Research</a>
+                                <a href="{{ research_url }}" class="nav__link">{{ t.nav.research }}</a>
                             </li>
                         </ul>
 
@@ -47,8 +67,8 @@
                 </nav>
 
                 <div class="nav-buttons">
-                    <i class="nav__icon nav__icon-menu ion ion-md-menu" aria-label="Menu Icon"></i>
-                    <i class="nav__icon nav__icon-search ion ion-md-search" aria-label="Search Icon"></i>
+                    <i class="nav__icon nav__icon-menu ion ion-md-menu" aria-label="{{ t.nav.menu }}"></i>
+                    <i class="nav__icon nav__icon-search ion ion-md-search" aria-label="{{ t.search.label }}"></i>
                     <div class="language-switcher">
                         {% include language-switcher.html %}
                     </div>
