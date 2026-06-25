@@ -9,7 +9,6 @@
   {% assign cta_url = site.baseurl | append: '/about/' %}
 {% endif %}
 
-<!-- begin c-hero -->
 <div class="hero">
   <div class="container">
     <div class="row">
@@ -17,11 +16,11 @@
         <div class="hero__content">
           <h1 class="hero__title">{{ t.hero.greeting }}</h1>
           <p class="hero__subtitle" style="text-align: justify;">
-            {{ t.hero.intro }}
+            {{ t.hero.intro | newline_to_br }}
             <a href="{{ cta_url }}">{{ t.hero.cta_text }}</a>
           </p>
           <div class="hero__social">
-            <span class="hero__social-title">{{ t.hero.social_title }} |</span>
+            <span class="hero__social-title">{{ t.hero.social_title }}<span style="margin: 0 5px;">|</span></span>
             {% include contact-link.html %}
           </div>
         </div>
@@ -34,4 +33,3 @@
     </div>
   </div>
 </div>
-<!-- end hero -->
