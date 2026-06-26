@@ -4,10 +4,16 @@ permalink: /life/
 category: life
 ---
 
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+{% else %}
+  {% assign t = site.data.fa %}
+{% endif %}
+
 <div class="container">
     <div class="row">
         <div class="col col-12">
-            <h2 class="category-title">{{ site.data.fa.life.title }}</h2>
+            <h2 class="category-title">{{ t.life.title }}</h2>
             <hr class="page-divider">
         </div>
     </div>
@@ -22,7 +28,7 @@ category: life
                 {% include article-content.html %}
             {% endfor %}
         {% else %}
-            <p>{{ site.data.fa.life.empty }}</p>
+            <p>{{ t.life.empty }}</p>
         {% endif %}
     </div>
 </div>

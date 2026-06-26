@@ -4,10 +4,16 @@ permalink: /research/
 category: research
 ---
 
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+{% else %}
+  {% assign t = site.data.fa %}
+{% endif %}
+
 <div class="container">
     <div class="row">
         <div class="col col-12">
-            <h2 class="category-title">{{ site.data.fa.research.title }}</h2>
+            <h2 class="category-title">{{ t.research.title }}</h2>
             <hr class="page-divider">
         </div>
     </div>
@@ -22,7 +28,7 @@ category: research
                 {% include article-content.html %}
             {% endfor %}
         {% else %}
-            <p>{{ site.data.fa.research.empty }}</p>
+            <p>{{ t.research.empty }}</p>
         {% endif %}
     </div>
 </div>
