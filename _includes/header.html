@@ -8,14 +8,14 @@
   {% assign about_url = site.baseurl | append: '/en/about/' %}
   {% assign life_url = site.baseurl | append: '/en/life/' %}
   {% assign notebook_url = site.baseurl | append: '/en/notebook/' %}
-  {% assign research_url = site.baseurl | append: '/en/research/' %}
+  {% assign works_url = site.baseurl | append: '/en/works/' %}
 {% else %}
   {% assign t = site.data.fa %}
   {% assign home_url = site.baseurl | append: '/' %}
   {% assign about_url = site.baseurl | append: '/about/' %}
   {% assign life_url = site.baseurl | append: '/life/' %}
   {% assign notebook_url = site.baseurl | append: '/notebook/' %}
-  {% assign research_url = site.baseurl | append: '/research/' %}
+  {% assign works_url = site.baseurl | append: '/works/' %}
 {% endif %}
 
 <div class="container">
@@ -58,7 +58,7 @@
                                 <a href="{{ notebook_url }}" class="nav__link">{{ t.nav.notebook }}</a>
                             </li>
                             <li class="nav__item">
-                                <a href="{{ research_url }}" class="nav__link">{{ t.nav.research }}</a>
+                                <a href="{{ works_url }}" class="nav__link">{{ t.nav.works }}</a>
                             </li>
                         </ul>
 

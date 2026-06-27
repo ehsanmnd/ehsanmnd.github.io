@@ -3,7 +3,7 @@
 
 # Site-level SEO
 site_title: "Ehsan Maminejad"
-site_description: "Ehsan Maminejad — Product & AI. Personal website: writing, research, and notes."
+site_description: "Ehsan Maminejad — Product & AI. Personal website: writing, works, and notes."
 
 nav:
   menu: "Menu"
@@ -11,7 +11,7 @@ nav:
   about: "About"
   life: "Life"
   notebook: "Notebook"
-  research: "Research"
+  works: "Works"
 
 hero:
   greeting: "Hello,"
@@ -31,9 +31,9 @@ notebook:
   title: "Notebook"
   empty: "No notes yet."
 
-research:
-  title: "Research"
-  empty: "No research published yet."
+works:
+  title: "Works"
+  empty: "No works published yet."
 
 shared:
   read_more: "Keep Reading"
