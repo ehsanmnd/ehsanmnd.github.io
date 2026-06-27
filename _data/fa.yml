@@ -41,6 +41,7 @@ shared:
   back: "بازگشت"
   published_on: "منتشر شده در"
   minutes_read: "دقیقه مطالعه"
+  words: "کلمه"
 
 blog:
   title: "آخرین نوشته‌ها"

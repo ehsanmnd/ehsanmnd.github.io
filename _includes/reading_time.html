@@ -12,12 +12,12 @@
 {%- assign post_content = include.content -%}
 
 {%- if post_content -%}
-  {%- assign words = post_content | strip_html | number_of_words -%}
+  {%- assign total_words = post_content | strip_html | number_of_words -%}
 {%- endif -%}
 
-{%- if words -%}
+{%- if total_words -%}
   {%- assign wpm = words_per_minute | times: 1.0 -%}
-  {%- assign read_time = words | divided_by: wpm | round -%}
+  {%- assign read_time = total_words | divided_by: wpm | round -%}
   {%- if read_time <= 1 -%}
     {%- assign reading_time = '1 ' | append: t.shared.minutes_read -%}
   {%- else -%}
