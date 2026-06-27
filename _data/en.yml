@@ -1,0 +1,75 @@
+# _data/en.yml
+# English translations — future-ready for the English localization.
+
+# Site-level SEO
+site_title: "Ehsan Maminejad"
+site_description: "Ehsan Maminejad — Product & AI. Personal website: writing, research, and notes."
+
+nav:
+  menu: "Menu"
+  home: "Home"
+  about: "About"
+  life: "Life"
+  notebook: "Notebook"
+  research: "Research"
+
+hero:
+  greeting: "Hello,"
+  intro: "I'm Ehsan Maminejad. Welcome to my website. I work in digital products and AI, both as a product manager and as a builder — someone who takes a business problem from zero to an impactful product."
+  cta_text: "Read more"
+  social_title: "Find me on"
+
+about:
+  title: "About"
+  cta_text: "Download CV"
+
+life:
+  title: "Life"
+  empty: "Nothing here yet."
+
+notebook:
+  title: "Notebook"
+  empty: "No notes yet."
+
+research:
+  title: "Research"
+  empty: "No research published yet."
+
+shared:
+  read_more: "Keep Reading"
+  back: "Back"
+  published_on: "Published on"
+  minutes_read: "min read"
+  words: "words"
+
+blog:
+  title: "Blog"
+  description: "What I write about"
+
+contact:
+  description: "Get in touch"
+
+tagline: "I understand, and I build"
+
+# UI strings used across multiple includes
+search:
+  label: "Search the blog"
+  placeholder: "Type to search"
+  no_results: "No results found"
+
+pagination:
+  prev: "Prev Posts"
+  next: "Next Posts"
+
+footer:
+  copyright: "All rights reserved."
+  powered_by: "Powered by"
+
+share:
+  title: "Share this article:"
+  facebook: "Share on Facebook"
+  twitter: "Share on Twitter"
+  linkedin: "Share on LinkedIn"
+
+# Date format (Ruby strftime)
+date_format: "%B %-d, %Y"

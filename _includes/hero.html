@@ -1,23 +1,35 @@
-<!-- begin c-hero -->
+{% comment %}
+  Single data-driven hero. Farsi (fa) is the default; English (en) is the secondary locale.
+{% endcomment %}
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+  {% assign cta_url = site.baseurl | append: '/' %}
+{% else %}
+  {% assign t = site.data.fa %}
+  {% assign cta_url = site.baseurl | append: '/about/' %}
+{% endif %}
+
 <div class="hero">
   <div class="container">
     <div class="row">
       <div class="col col-6 col-t-12 last-item">
         <div class="hero__content">
-          <h1 class="hero__title">{{ site.data.settings.author.say-hello }}</h1>
-          <p class="hero__subtitle" style="text-align: justify;">{{ site.data.settings.author.bio }} <a href="/fa" style="text-decoration: none;">If you want to see my website in Farsi, click here</a>.</p>
+          <h1 class="hero__title">{{ t.hero.greeting }}</h1>
+          <p class="hero__subtitle" style="text-align: justify;">
+            {{ t.hero.intro | newline_to_br }}
+            <a href="{{ cta_url }}">{{ t.hero.cta_text }}</a>
+          </p>
           <div class="hero__social">
-            <span class="hero__social-title">Follow Me |</span>
+            <span class="hero__social-title">{{ t.hero.social_title }}<span style="margin: 0 5px;">|</span></span>
             {% include contact-link.html %}
           </div>
         </div>
       </div>
       <div class="col col-6 col-t-12">
         <div class="hero__image">
-          <img src="{{site.baseurl}}/assets/images/{{ site.data.settings.author.image }}" alt="">
+          <img src="{{site.baseurl}}/assets/images/{{ site.data.settings.author.image }}" alt="{{ site.data.settings.author.name }}">
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- end hero -->

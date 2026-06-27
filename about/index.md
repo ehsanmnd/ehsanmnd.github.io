@@ -1,10 +1,9 @@
 ---
 layout: page
 title: درباره من
-description: About page of Ehsan Maminejad - Blog 
+description: احسان ممی‌نژاد - مدیر محصول و سازنده در حوزه محصولات دیجیتال و هوش مصنوعی
 image: about.jpg
-permalink: about/fa
-lang: fa
+permalink: /about/
 comments: true
 ---
 

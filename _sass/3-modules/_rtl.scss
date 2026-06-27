@@ -1,14 +1,31 @@
 @import '1-tools/fontiran'; /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+html[dir="rtl"] body,
 .rtl-content {
-	font-family: IRANSans !important;
-	font-weight: 400;
-	direction: rtl;
+    font-family: 'IRANSans', 'Roboto', sans-serif !important;
+    font-weight: 400;
+    direction: rtl;
 }
-h1, h2, h3, h4, h5, h6,input, textarea {
-	font-family: IRANSans !important;
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+.rtl-content h1,
+.rtl-content h2,
+.rtl-content h3,
+.rtl-content h4,
+.rtl-content h5,
+.rtl-content h6,
+.rtl-content input,
+.rtl-content textarea {
+    font-family: 'IRANSans', 'Roboto', sans-serif !important;
 }
+
 h1 {
-	font-weight: bold;
+    font-weight: bold;
 }
 .wrapper {
 	max-width: 900px;

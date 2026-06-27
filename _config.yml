@@ -13,15 +13,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Pagination settings
 paginate: 6
-paginate_path: "/blog/page/:num"
+paginate_path: "/page/:num"
 
 # Language settings
-languages: ["en", "fa"]
-default_lang: "en"
-exclude_from_localizations: ["assets", "images", "css", "js", "fonts"]
+languages: ["fa", "en"]
+default_lang: "fa"
 
 
 sass:
@@ -30,6 +30,16 @@ sass:
 
 # Defaults
 defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "fa"
+      direction: "rtl"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+      direction: "ltr"
   - scope:
       path: "assets/images"
       type: "posts"
@@ -62,7 +72,6 @@ kramdown:
 watch: true
 safe: true
 
-# Exclude from processing
 # Exclude from processing
 exclude:
   - vendor

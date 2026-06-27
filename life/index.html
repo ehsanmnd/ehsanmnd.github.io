@@ -1,16 +1,19 @@
 ---
 layout: default
-title: Life
 permalink: /life/
 category: life
-description: A space for personal experiences, reflections, and day-to-day thoughts.
 ---
+
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+{% else %}
+  {% assign t = site.data.fa %}
+{% endif %}
 
 <div class="container">
     <div class="row">
         <div class="col col-12">
-            <h2 class="category-title">{{ page.title }}</h2>
-            <h4 class="page-description">{{ page.description }}</h4>
+            <h2 class="category-title">{{ t.life.title }}</h2>
             <hr class="page-divider">
         </div>
     </div>
@@ -18,14 +21,14 @@ description: A space for personal experiences, reflections, and day-to-day thoug
 
 <div class="container">
     <div class="row">
-        {% assign filtered_posts = site.posts | where: "categories", page.category | where: "lang", "en" %}
+        {% assign filtered_posts = site.posts | where: "categories", page.category %}
 
         {% if filtered_posts.size > 0 %}
             {% for post in filtered_posts %}
                 {% include article-content.html %}
             {% endfor %}
         {% else %}
-            <p>No posts found in this category.</p>
+            <p>{{ t.life.empty }}</p>
         {% endif %}
     </div>
 </div>

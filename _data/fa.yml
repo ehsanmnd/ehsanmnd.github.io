@@ -1,0 +1,76 @@
+# _data/fa.yml
+
+# Site-level SEO
+site_title: "احسان ممی‌نژاد"
+site_description: "احسان ممی‌نژاد — محصول و هوش مصنوعی. وبسایت شخصی: نوشته‌ها، پژوهش‌ها و یادداشت‌ها."
+
+nav:
+  menu: "منو"
+  home: "خانه"
+  about: "درباره من"
+  life: "سفرنامه"
+  notebook: "یادداشت‌ها"
+  research: "پژوهش‌ها"
+
+hero:
+  greeting: "سلام،"
+  intro: |
+       من احسان ممی‌نژاد هستم. به وبسایت من خوش اومدین. 
+       من در حوزه محصولات دیجیتال و هوش مصنوعی کار می‌کنم، هم به عنوان مدیر محصول، هم به عنوان سازنده. کسی که یه مسئله کسب و کاری رو از صفر تا یه محصول اثرگذار پیش‌ می‌بره.
+  cta_text: "برای آشنایی بیشتر اینجا رو بخونید."
+  social_title: "جاهایی که هستم"
+
+about:
+  title: "درباره من"
+  cta_text: "دانلود رزومه"
+
+life:
+  title: "سفرنامه کاری و زندگی من"
+  empty: "هنوز چیزی نوشته نشده."
+
+notebook:
+  title: "یادداشت‌های گاه به گاه من"
+  empty: "هنوز یادداشتی ثبت نشده."
+
+research:
+  title: "پژوهش‌های چاپ شده و نشده من!"
+  empty: "هنوز پژوهشی منتشر نشده."
+
+shared:
+  read_more: "بیشتر"
+  back: "بازگشت"
+  published_on: "منتشر شده در"
+  minutes_read: "دقیقه مطالعه"
+  words: "کلمه"
+
+blog:
+  title: "آخرین نوشته‌ها"
+  description: "آنچه می‌نویسم"
+
+contact:
+  description: "ارتباط با من"
+
+tagline: "هم می‌فهمم، هم می‌سازم"
+
+# UI strings used across multiple includes
+search:
+  label: "جستجوی وبلاگ"
+  placeholder: "برای جستجو تایپ کنید"
+  no_results: "نتیجه‌ای پیدا نشد"
+
+pagination:
+  prev: "نوشته‌های قبلی"
+  next: "نوشته‌های بعدی"
+
+footer:
+  copyright: "تمامی حقوق محفوظ است."
+  powered_by: "قدرت گرفته از"
+
+share:
+  title: "این نوشته را به اشتراک بگذارید:"
+  facebook: "اشتراک در فیسبوک"
+  twitter: "اشتراک در توییتر"
+  linkedin: "اشتراک در لینکدین"
+
+# Date format (Ruby strftime)
+date_format: "%d %B %Y"

@@ -66,14 +66,16 @@ $(document).ready(function() {
 
   /* =======================
   // Instagram Feed
+  // TODO: Replace with your own credentials from https://developers.facebook.com/
+  // userId: your Instagram user ID
+  // accessToken: your Instagram Basic Display API access token
   ======================= */
-  // userId and accessToken from Matthew Elsom (https://codepen.io/matthewelsom/pen/zrrrLN) for example, for which he thanks a lot!
   var instagramFeed = new Instafeed({
     get: 'user',
     limit: 6,
     resolution: 'standard_resolution',
-    userId: '8987997106',
-    accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+    userId: 'YOUR_USER_ID',
+    accessToken: 'YOUR_ACCESS_TOKEN',
     template:
       '<li class="instagram-item"><a href="{{link}}" aria-label="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>'
   });
@@ -97,6 +99,5 @@ $(document).ready(function() {
       $(".top").removeClass("is-active");
     }
   });
-
 
 });

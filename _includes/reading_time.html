@@ -1,30 +1,26 @@
 {%- comment -%}
-  According to [Wikipedia](http://en.wikipedia.org/wiki/Words_per_minute),
-  an average person can read 180 words per minute in a computer monitor.
+  Average reading speed: 180 words per minute.
 {%- endcomment -%}
 
-{%- assign words_per_minute = site.words_per_minute | default: 180 -%}
+{%- if page.lang == "en" -%}
+  {%- assign t = site.data.en -%}
+{%- else -%}
+  {%- assign t = site.data.fa -%}
+{%- endif -%}
 
+{%- assign words_per_minute = site.words_per_minute | default: 180 -%}
 {%- assign post_content = include.content -%}
 
 {%- if post_content -%}
-  {%- assign words = post_content | strip_html | number_of_words -%}
+  {%- assign total_words = post_content | strip_html | number_of_words -%}
 {%- endif -%}
 
-{%- if words %}
-  {%- comment -%}### TOTAL_WORDS ###{%- endcomment -%}
-  {%- if words <= 1 -%}
-    {%- assign total_words = 1 | append: ' word' -%}
-  {%- else -%}
-    {%- assign total_words = words | append: ' words' -%}
-  {%- endif -%}
-
-  {%- comment -%}### READING_TIME ###{%- endcomment -%}
+{%- if total_words -%}
   {%- assign wpm = words_per_minute | times: 1.0 -%}
-  {%- assign read_time = words | divided_by: wpm | round -%}
+  {%- assign read_time = total_words | divided_by: wpm | round -%}
   {%- if read_time <= 1 -%}
-    {%- assign reading_time = 1 | append: ' min read' -%}
+    {%- assign reading_time = '1 ' | append: t.shared.minutes_read -%}
   {%- else -%}
-    {%- assign reading_time = read_time | append: ' min read' -%}
+    {%- assign reading_time = read_time | append: ' ' | append: t.shared.minutes_read -%}
   {%- endif -%}
 {%- endif -%}

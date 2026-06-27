@@ -1,9 +1,11 @@
 ---
 layout: page
 title: About
-description: About page of Ehsan Maminejad - Blog 
+description: Ehsan Maminejad - Product Manager and Builder in Digital Products and AI
 image: about.jpg
-permalink: about/en
+lang: en
+direction: ltr
+permalink: /en/about/
 comments: true
 ---
 
@@ -11,7 +13,7 @@ comments: true
 Hi dear vistors! My name is Ehsan Maminejad, and welcome to my website! 
 
 
-> For a comprehensive description of me in Farsi, you can read [here](/about/fa).
+> For a comprehensive description of me in Farsi, you can read [here](/about/).
 
 
 I am trying to be an observer and a problem solver in this world full of challenges and opportunities.  

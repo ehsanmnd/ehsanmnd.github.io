@@ -1,31 +1,23 @@
 #-------------------------------
 # Site Settings
 logo: logo.svg
+title: "بوف بینا"
+description: "بوف بینا | هم می‌فهمم، هم می‌سازم"
 
 #-------------------------------
 # Author Settings
 author:
   name: Ehsan Maminejad
   image: 01.jpg
-  say-hello: Hello, I'm <strong>Ehsan Maminejad</strong> and welcome to my site.
-  bio: Data scientist by day, problem solver by nature. I'm an engineer and scientist who loves solving real-world problems with AI and data—building systems that actually work when real people use them, not just in notebooks.
 
 # Contact links
 github: https://github.com/ehsanmnd
 linkedin: https://www.linkedin.com/in/ehsanmaminejad
-    # Add more social links as needed
-
-#-------------------------------
-# Blog Settings
-blog:
-  title: Blog
-  description: My latest thoughts and stories
 
 #-------------------------------
 # Contact Settings
 contact:
   email: ehsan.maminejad@gmail.com
-  description: Get in touch with me
 
 #-------------------------------
 # Analytics Settings
@@ -33,4 +25,4 @@ google-analytics: G-18WKJXFHXS
 
 #-------------------------------
 # Build Settings
-disqus-identifier: Echius # Add your shortname for Disqus Comment
+disqus-identifier: Echius

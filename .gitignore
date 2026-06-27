@@ -21,3 +21,4 @@ gh-pages/
 site/_site/
 test/dest
 tmp/*
+/docs
