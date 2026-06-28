@@ -103,5 +103,5 @@ layout: default
     {% endif %}
   </div>
 
-  {% if site.data.settings.disqus-identifier %}{% include disqus-comments.html %}{% endif %}
+  {% if page.comments %}{% include giscus-comments.html %}{% endif %}
 </div>
