@@ -198,3 +198,14 @@ h1 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
+
+blockquote {
+  font-size: 1.3em;
+  border-right: 4px solid #008d81;
+  border-left: none;
+  padding-right: 20px;
+  padding-left: 0;
+  margin-right: 0;
+  color: #444;
+  font-style: italic;
+}
