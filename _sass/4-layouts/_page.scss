@@ -29,20 +29,28 @@
 }
 
 .page__head {
-  
   .page-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: $light-gray;
-    max-width: 950px;
-    margin: 0 auto; /* مرکز کردن */
     &:after {
       content: "";
       display: table;
       width: 100%;
       min-height: 300px;
       padding-top: 50%;
+    }
+  }
+
+  &.portrait .page-image {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center top;
+    &:after {
+      padding-top: 100%;
+      min-height: 0;
     }
   }
 }
