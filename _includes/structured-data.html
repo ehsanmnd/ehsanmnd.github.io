@@ -1,0 +1,64 @@
+{% comment %}
+  JSON-LD structured data.
+  Outputs WebSite schema on all pages, BlogPosting on posts,
+  and Person on the about page.
+{% endcomment %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.data.settings.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "description": "{{ site.data.settings.description }}",
+  "inLanguage": "{{ page.lang | default: 'fa' }}",
+  {% if page.lang == "en" %}
+  "alternateName": "{{ site.data.fa.site_title }}"
+  {% else %}
+  "alternateName": "{{ site.data.en.site_title }}"
+  {% endif %}
+}
+</script>
+
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | default: site.description | strip_html | truncate: 200 }}",
+  "image": "{% if page.image %}{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.data.settings.author.name }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.data.settings.author.name }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.permalink == '/about/' or page.permalink == '/en/about/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.data.settings.author.name }}",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.data.settings.author.image }}",
+  "sameAs": [
+    "{{ site.data.settings.github }}",
+    "{{ site.data.settings.linkedin }}"
+  ],
+  "jobTitle": "Product Manager & AI Builder",
+  "knowsAbout": ["Product Management", "Artificial Intelligence", "Digital Products"]
+}
+</script>
+{% endif %}

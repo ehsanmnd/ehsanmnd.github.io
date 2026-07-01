@@ -62,8 +62,8 @@
 // 1.6 Zoom
 @import '1-tools/zoom';
 
-// 1.7 Icons
-@import '1-tools/ionicons';
+// 1.7 Icons — loaded via CDN in head.html (unpkg.com/ionicons)
+// @import '1-tools/ionicons';
 
 // 1.8 Iransans
 @import '1-tools/fontiran';
