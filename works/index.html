@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /research/
-category: research
+permalink: /works/
+category: works
 ---
 
 {% if page.lang == "en" %}
@@ -13,7 +13,7 @@ category: research
 <div class="container">
     <div class="row">
         <div class="col col-12">
-            <h2 class="category-title">{{ t.research.title }}</h2>
+            <h2 class="category-title">{{ t.works.title }}</h2>
             <hr class="page-divider">
         </div>
     </div>
@@ -28,7 +28,7 @@ category: research
                 {% include article-content.html %}
             {% endfor %}
         {% else %}
-            <p>{{ t.research.empty }}</p>
+            <p>{{ t.works.empty }}</p>
         {% endif %}
     </div>
 </div>

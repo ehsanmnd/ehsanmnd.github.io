@@ -24,5 +24,7 @@ contact:
 google-analytics: G-18WKJXFHXS
 
 #-------------------------------
-# Build Settings
-disqus-identifier: Echius
+# Comments (Giscus)
+giscus:
+  enabled: true
+  repo: ehsanmnd/ehsanmnd.github.io

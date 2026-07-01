@@ -25,9 +25,7 @@
 
 <div class="container">
     {% if page.comments %}
-    {% if site.data.settings.disqus-identifier %}
-    {% include disqus-comments.html %}
-    {% endif %}
+    {% include giscus-comments.html %}
     {% endif %}
 </div>
 
