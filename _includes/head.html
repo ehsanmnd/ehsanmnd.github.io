@@ -31,6 +31,28 @@
   {% endif %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ locale.site_title }}{% else %}{{ locale.site_title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ locale.site_description }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}/assets/images/{{ page.image }}{% else %}{{ site.url }}/assets/images/{{ site.data.settings.logo }}{% endif %}" />
+  <meta property="og:locale" content="{% if page.lang == 'en' %}en_US{% else %}fa_IR{% endif %}" />
+  <meta property="og:site_name" content="{{ site.data.settings.title }}" />
+  {% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+  <meta property="article:author" content="{{ site.data.settings.author.name }}" />
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ locale.site_title }}{% else %}{{ locale.site_title }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ locale.site_description }}{% endif %}" />
+  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}/assets/images/{{ page.image }}{% else %}{{ site.url }}/assets/images/{{ site.data.settings.logo }}{% endif %}" />
+
+  <!-- Preconnect for CDN -->
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
   <!-- Ionicons -->
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
@@ -40,4 +62,6 @@
   {% endcapture %}
   {{ include_to_scssify | scssify }}
   </style>
+
+  {% include structured-data.html %}
 </head>
