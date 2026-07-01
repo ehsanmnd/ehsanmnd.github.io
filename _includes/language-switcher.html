@@ -1,0 +1,11 @@
+{% comment %}
+  Language switcher. Farsi (fa) lives at root; English (en) lives under /en/.
+  When on an English page, link to the Farsi equivalent (strip /en prefix).
+  When on a Farsi page, link to the English equivalent (prepend /en prefix).
+{% endcomment %}
+{% if page.lang == "en" %}
+  {% assign fa_url = page.url | remove: '/en' %}
+  <a href="{{ site.baseurl }}{{ fa_url }}" class="lang-switch" title="تغییر به فارسی">فا</a>
+{% else %}
+  <a href="{{ site.baseurl }}/en{{ page.url }}" class="lang-switch" title="Switch to English">EN</a>
+{% endif %}

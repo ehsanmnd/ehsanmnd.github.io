@@ -6,8 +6,8 @@ comments: true
 author: "Ehsan Maminejad"
 summary: "My first post on my website, and why I am here."
 tags: [life]
-category: life
-lang: eng
+categories: life
+lang: en
 image: owl-2.png
 ---
 
@@ -40,7 +40,7 @@ I've seen firsthand how data can transform businesses and industries.
 
 Also, I am interested in mountain climbing, cooking, reading books and music.
 
-But enough about my resume (you can check that out on my [About page(en)](/about/en) or [About page(fa)](/about/fa)if you're really curious). What I'm really excited about is sharing what I've learned along the way and learning from you too!
+But enough about my resume (you can check that out on my [About page(en)](/en/about/) or [About page(fa)](/about/)if you're really curious). What I'm really excited about is sharing what I've learned along the way and learning from you too!
 
 ## What's This Blog All About?
 

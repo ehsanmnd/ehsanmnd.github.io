@@ -3,14 +3,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
-  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
+  {% if page.lang == "en" %}
+    {% assign locale = site.data.en %}
+  {% else %}
+    {% assign locale = site.data.fa %}
+  {% endif %}
+
+  <title>{% if page.title %}{{ page.title }} | {{ locale.site_title }}{% else %}{{ locale.site_title }}{% endif %}</title>
+  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ locale.site_description }}{% endif %}'>
+
+  {% if page.lang == "en" %}
+  <meta name="language" content="en">
+  {% else %}
+  <meta name="language" content="fa">
+  {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ locale.site_title }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <!-- hreflang -->
+  {% if page.lang == "en" %}
+    <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+    <link rel="alternate" hreflang="fa" href="{{ site.url }}{{ page.url | remove: '/en' }}" />
+  {% else %}
+    <link rel="alternate" hreflang="fa" href="{{ page.url | absolute_url }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url }}" />
+  {% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/" />
+
   <!-- Ionicons -->
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 

@@ -1,3 +1,9 @@
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+{% else %}
+  {% assign t = site.data.fa %}
+{% endif %}
+
 <script src="{{ site.baseurl }}/assets/js/vendors/jquery-3.3.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendors/simple-jekyll-search.min.js"></script>
 <script>
@@ -6,7 +12,7 @@
     resultsContainer: document.getElementById("js-results-container"),
     json: "{{site.baseurl}}/search.json",
     searchResultTemplate: '<li class="search-results__item"><a class="search-results__link" href="{url}">{title}</a><br> <span class="search-results__date">{date}</span></li>',
-    noResultsText: '<li class="no-results">No results found</li>'
+    noResultsText: '<li class="no-results">{{ t.search.no_results }}</li>'
   });
 </script>
 <script src="{{ site.baseurl }}/assets/js/vendors/transition.js"></script>
@@ -14,3 +20,4 @@
 <script src="{{ site.baseurl }}/assets/js/vendors/instafeed.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendors/jquery.fitvids.js"></script>
 <script src="{{ site.baseurl }}/assets/js/common.js"></script>
+<script src="{{ site.baseurl }}/assets/js/persian-digits.js"></script>

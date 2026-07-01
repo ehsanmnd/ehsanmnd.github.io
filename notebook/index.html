@@ -1,16 +1,19 @@
 ---
 layout: default
-title: Notebook
 permalink: /notebook/
 category: notebook
-description: Quick notes, ideas, and learning materials.
 ---
+
+{% if page.lang == "en" %}
+  {% assign t = site.data.en %}
+{% else %}
+  {% assign t = site.data.fa %}
+{% endif %}
 
 <div class="container">
     <div class="row">
         <div class="col col-12">
-            <h2 class="category-title">{{ page.title }}</h2>
-            <h4 class="page-description">{{ page.description }}</h4>
+            <h2 class="category-title">{{ t.notebook.title }}</h2>
             <hr class="page-divider">
         </div>
     </div>
@@ -25,7 +28,7 @@ description: Quick notes, ideas, and learning materials.
                 {% include article-content.html %}
             {% endfor %}
         {% else %}
-            <p>No posts found in this category.</p>
+            <p>{{ t.notebook.empty }}</p>
         {% endif %}
     </div>
 </div>

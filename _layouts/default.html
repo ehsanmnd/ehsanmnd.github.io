@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'fa' }}" dir="{{ page.direction | default: 'rtl' }}">
 
 {% include head.html %}
 
@@ -9,12 +9,11 @@
 {% include google-analytics.html %}
 {% endif %}
 
-
 {% include header.html %}
 
 <!-- begin content -->
 {% assign baseurl_with_slash = site.baseurl | append: '/' %}
-<main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash %}home{% endif %}"
+<main class="content {% if page.url == site.baseurl or page.url == baseurl_with_slash or page.url == '/en/' %}home{% endif %}"
       aria-label="Content">
     {{ content }}
 </main>
@@ -26,9 +25,7 @@
 
 <div class="container">
     {% if page.comments %}
-    {% if site.data.settings.disqus-identifier %}
-    {% include disqus-comments.html %}
-    {% endif %}
+    {% include giscus-comments.html %}
     {% endif %}
 </div>
 
