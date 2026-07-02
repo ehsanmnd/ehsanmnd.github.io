@@ -69,7 +69,6 @@ kramdown:
   syntax_highlighter: rouge
 
 # Development settings
-watch: false
 safe: true
 
 # Exclude from processing
