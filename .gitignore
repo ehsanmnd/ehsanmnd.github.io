@@ -9,10 +9,10 @@ vendor
 .bundle/
 .byebug_history
 .ruby-gemset
-.ruby-version
+# .ruby-version (needed for GitHub Actions)
 .sass-cache
 /vendor
-Gemfile.lock
+# Gemfile.lock (needed for GitHub Actions)
 _site
 bin/
 bbin/
